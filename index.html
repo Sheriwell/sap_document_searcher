@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SAP simple document searcher</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="flex">
+				<div class="leftbox">
+					<div class="flex">	
+						<img class="sap_logo" src ="images/logo.svg"/>
+						<div class="title">SAP simple document searcher</div>
+					</div>
+				</div>
+				<div class="rightbox2">
+					<img class="decoration" id="decoration_area"/>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="flex">
+			<div class="leftbox">
+				<input class="querybox1" type="text" id="query1" name="query1" placeholder="Enter keywords or note number">
+				<div class="leftbox_subflex">
+					<div class="subbox">			
+						<a id="searchHelp" href="#" class="btn btn-border"><span>Search Help</span></a>
+						<p class="radio"><input type="radio" name="slct_help" value="0"> S/4 On-premise</p>
+						<p class="radio"><input type="radio" name="slct_help" value="1"> S/4 Public Cloud</p>
+						<p class="radio"><input type="radio" name="slct_help" value="2"> BTP</p>
+					</div>	
+					<div class="line"></div>
+					<div class="subbox">
+						<a id="searchBlog" href="#" class="btn btn-border">Search Blog</a>
+						<p class="radio"><input type="radio" name="slct_blog" value="0"> on Community</p>
+						<p class="radio"><input type="radio" name="slct_blog" value="1"> on Google</p>
+					</div>
+					<div class="line"></div>
+					<div class="subbox">
+						<a id="searchNote" href="#" class="btn btn-border">Search Note</a>
+						<a id="searchTutorial" href="#" class="btn btn-border">Search Tutorial</a>
+					</div>
+				</div>	
+			</div>
+			<div class="line"></div>
+			<div class="rightbox">
+				<input class="querybox2" type="text" id="fiori_id" name="fiori_id" placeholder="Enter Fiori ID">
+				<a id="searchFiori" href="#" class="btn btn-border">Search Fiori app</button>
+				<a class="linktxt" href="https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/index.html#/home" target="_blank">
+					Go To the top page and search keywords
+				</a>
+			</div>
+		</div>
+		<div class="flex">
+			<a class="linktxt" href="#" id="clear_texts">
+				Clear text inputs
+			</a>
+		</div>
+		<script src="controller.js"></script>
+	</body>
+</html>
+

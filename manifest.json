@@ -1,0 +1,16 @@
+{
+	"name": "SAP Simple Document Searcher",
+	"manifest_version": 3,
+	"version": "1.2",
+	"action": {
+
+		"default_popup": "index.html"
+	},
+	"description": "Search SAP official documents easily from your chrome extension. This tool is developed privately and not an official tool.",
+	"permissions":["storage"],
+	"icons": {
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	}
+}
