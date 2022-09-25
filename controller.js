@@ -81,7 +81,10 @@ function clearTexts() {
 var arr_slct_help = {
 	0: "SAP_S4HANA_ON-PREMISE",
 	1: "SAP_S4HANA_CLOUD",
-	2: "BTP"		
+	2: "BTP",
+	3: "SAP_ANALYTICS_CLOUD",
+	4: "SAP_DATA_WAREHOUSE_CLOUD",
+	
 };
 
 var arr_slct_blog = {
@@ -94,7 +97,7 @@ const imageArea = document.getElementById('decoration_area');
 const imageNo = getRandomInt(14);
 const paddedNo = ( '000' + imageNo ).slice( -3 );
 imageArea.src = 'images/decoration/' + paddedNo + '.svg';
-
+ 
 chrome.storage.sync.get(["storage_slct_help", "storage_slct_blog", "storage_query", "storage_fiori_id"], function(items) {
 	try {document.getElementsByName('slct_help')[items.storage_slct_help].checked = true;} catch {}
 	try {document.getElementsByName('slct_blog')[items.storage_slct_blog].checked = true;} catch {}
@@ -112,22 +115,27 @@ chrome.storage.sync.get(["storage_slct_help", "storage_slct_blog", "storage_quer
 });
 
 document.getElementById("searchHelp").onclick = function() {
+	document.form1.submit();
 	searchHelp();
 };
 
 document.getElementById("searchBlog").onclick = function() {
+	document.form1.submit();
 	searchBlog();
 };
 
 document.getElementById("searchNote").onclick = function() {
+	document.form1.submit();
 	searchNote();
 };
 
 document.getElementById("searchTutorial").onclick = function() {
+	document.form1.submit();
 	searchTutorial();
 };
 
 document.getElementById("searchFiori").onclick = function() {
+	document.form2.submit();
 	searchFiori();
 };
 

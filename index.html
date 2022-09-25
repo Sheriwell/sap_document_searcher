@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>SAP simple document searcher</title>
+		<title>SAP simple document searcher</title>	
 		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
@@ -18,18 +18,26 @@
 					<img class="decoration" id="decoration_area"/>
 				</div>
 			</div>
-
-
 		</div>
 		<div class="flex">
 			<div class="leftbox">
-				<input class="querybox1" type="text" id="query1" name="query1" placeholder="Enter keywords or note number">
+				<form name="form1">
+					<input class="querybox1" type="text" id="query1" name="query1" placeholder="Enter keywords or note number">
+					<input type="text" name="dummy" style="display:none;">
+					<button type='button' hidden="true"></button>
+				</form>
 				<div class="leftbox_subflex">
 					<div class="subbox">			
 						<a id="searchHelp" href="#" class="btn btn-border"><span>Search Help</span></a>
 						<p class="radio"><input type="radio" name="slct_help" value="0"> S/4 On-premise</p>
 						<p class="radio"><input type="radio" name="slct_help" value="1"> S/4 Public Cloud</p>
-						<p class="radio"><input type="radio" name="slct_help" value="2"> BTP</p>
+						<p class="radio">
+							<input type="radio" name="slct_help" value="2"> BTP
+							<input type="radio" name="slct_help" value="3"> SAC
+						</p>
+						<p class="radio">
+							<input type="radio" name="slct_help" value="4"> DWC
+						</p>
 					</div>	
 					<div class="line"></div>
 					<div class="subbox">
@@ -46,8 +54,13 @@
 			</div>
 			<div class="line"></div>
 			<div class="rightbox">
-				<input class="querybox2" type="text" id="fiori_id" name="fiori_id" placeholder="Enter Fiori ID">
+				<form name="form2">
+					<input class="querybox2" type="text" id="fiori_id" name="fiori_id" placeholder="Enter Fiori ID">
+					<input type="text" name="dummy" style="display:none;">
+					<button type='button' hidden="true"></button>
+				</form>
 				<a id="searchFiori" href="#" class="btn btn-border">Search Fiori app</button>
+					
 				<a class="linktxt" href="https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/index.html#/home" target="_blank">
 					Go To the top page and search keywords
 				</a>

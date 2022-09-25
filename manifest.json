@@ -3,7 +3,6 @@
 	"manifest_version": 3,
 	"version": "1.2",
 	"action": {
-
 		"default_popup": "index.html"
 	},
 	"description": "Search SAP official documents easily from your chrome extension. This tool is developed privately and not an official tool.",
