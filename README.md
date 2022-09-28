@@ -12,6 +12,7 @@ It enables our seamless investigation of SAP products. I hope it expedites your 
 
 ## How to download
 You can download the tool from the following URL:
+
 https://chrome.google.com/webstore/detail/sap-simple-document-searc/lllffhdldocmcdiaojfbhcgihmnjdhbl
 
 ## Disclaimer
