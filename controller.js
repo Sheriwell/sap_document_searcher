@@ -82,8 +82,9 @@ var arr_slct_help = {
 	0: "SAP_S4HANA_ON-PREMISE",
 	1: "SAP_S4HANA_CLOUD",
 	2: "BTP",
-	3: "SAP_ANALYTICS_CLOUD",
-	4: "SAP_DATA_WAREHOUSE_CLOUD",
+	3: "SAP%20Business%20Application%20Studio",
+	4: "SAP_ANALYTICS_CLOUD",
+	5: "SAP_DATA_WAREHOUSE_CLOUD",
 	
 };
 
