@@ -51,6 +51,19 @@ function searchNote() {
 	window.open(url, '_blank');
 }
 
+function searchNoteNew() {
+	var query = document.getElementById('query1').value;
+	chrome.storage.sync.set({"storage_query": query});
+	if (isNaN(query) === true) {
+		var url_base = 'https://me.sap.com/support/search/';
+		var url = url_base + query;
+	} else {	
+		var url_base = 'https://me.sap.com/notes/';
+		var url = url_base + parseInt(query);
+	}
+	window.open(url, '_blank');
+}
+
 function searchTutorial() {
 	var query = document.getElementById('query1').value;
 	chrome.storage.sync.set({"storage_query": query});
@@ -128,6 +141,10 @@ document.getElementById("searchBlog").onclick = function() {
 document.getElementById("searchNote").onclick = function() {
 	document.form1.submit();
 	searchNote();
+};
+document.getElementById("searchNoteNew").onclick = function() {
+	document.form1.submit();
+	searchNoteNew();
 };
 
 document.getElementById("searchTutorial").onclick = function() {

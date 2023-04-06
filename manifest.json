@@ -1,7 +1,7 @@
 {
 	"name": "SAP Simple Document Searcher",
 	"manifest_version": 3,
-	"version": "1.3",
+	"version": "1.4",
 	"action": {
 		"default_popup": "index.html"
 	},
